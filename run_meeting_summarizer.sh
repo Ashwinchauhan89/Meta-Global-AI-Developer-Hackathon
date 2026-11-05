@@ -8,17 +8,23 @@ WHISPER_CPP_DIR="whisper.cpp"
 WHISPER_MODEL="small"   # Change to "base", "medium", "large", etc. as needed
 PYTHON_SCRIPT="main.py" # Change this to the name of your Python script
 
+
+
 # Step 1: Check if Python is installed
 if ! command -v $PYTHON_VERSION &>/dev/null; then
     echo "Python3 is not installed. Please install Python 3.x to continue."
     exit 1
 fi
 
+
+
 # Step 2: Create a virtual environment if it doesn't exist
 if [ ! -d "$VENV_DIR" ]; then
     echo "Creating a virtual environment in $VENV_DIR..."
     $PYTHON_VERSION -m venv $VENV_DIR
 fi
+
+
 
 # Step 3: Activate the virtual environment
 echo "Activating the virtual environment..."

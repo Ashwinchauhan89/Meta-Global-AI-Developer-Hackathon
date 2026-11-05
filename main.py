@@ -177,6 +177,7 @@ def translate_and_summarize(
     return summary, transcript_file
 
 
+
 # Gradio interface
 def gradio_app(
     audio, context: str, whisper_model_name: str, llm_model_name: str
